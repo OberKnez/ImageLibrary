@@ -4,6 +4,7 @@ List of async images done for UIKit and SwiftUI.
 
 Caching mechanism with 4 hours long storage implemented.
 ```
+*** DownloadService.swift ***
 private func fetchImage(descriptor: ImageDescriptor) -> AnyPublisher<UIImage?, Error> {
         guard let url = descriptor.url else {
             // return Just(descriptor.placeholder).tryMap { $0 }.eraseToAnyPublisher()
