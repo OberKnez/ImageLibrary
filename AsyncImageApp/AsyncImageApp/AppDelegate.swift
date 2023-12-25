@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  AsyncImageDemo
+//  AsyncImageApp
 //
 //  Created by Vuk Knežević on 25.12.23..
 //

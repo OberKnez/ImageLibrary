@@ -1,0 +1,11 @@
+framework module AsyncImageSDK {
+  umbrella header "AsyncImageSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module AsyncImageSDK.Swift {
+  header "AsyncImageSDK-Swift.h"
+  requires objc
+}

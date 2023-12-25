@@ -33,7 +33,7 @@ struct SwiftUIController: View {
                     })
                     .frame(height: 70)
                     .frame(maxWidth: .infinity)
-                    .background(Color.blue)
+                    .background(Color(UIColor.blue))
                     .padding(.horizontal, 30)
                     .padding(.bottom)
                 }

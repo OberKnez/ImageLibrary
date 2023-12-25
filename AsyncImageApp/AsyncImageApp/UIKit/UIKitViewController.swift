@@ -45,17 +45,19 @@ class UIKitViewController: UIViewController {
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -70),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -90),
             
             buttonContainer.topAnchor.constraint(equalTo: tableView.bottomAnchor),
-            buttonContainer.heightAnchor.constraint(equalToConstant: 70),
+            buttonContainer.heightAnchor.constraint(equalToConstant: 90),
             buttonContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             buttonContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
             button.centerXAnchor.constraint(equalTo: buttonContainer.centerXAnchor),
-            button.widthAnchor.constraint(equalTo: buttonContainer.widthAnchor, multiplier: 0.75),
+            buttonContainer.trailingAnchor.constraint(equalTo: buttonContainer.trailingAnchor, constant: 30),
             button.centerYAnchor.constraint(equalTo: buttonContainer.centerYAnchor),
-            button.heightAnchor.constraint(equalToConstant: 40)
+            button.leadingAnchor.constraint(equalTo: buttonContainer.leadingAnchor, constant: 30),
+            button.topAnchor.constraint(equalTo: buttonContainer.topAnchor, constant: 5),
+            button.bottomAnchor.constraint(equalTo: buttonContainer.bottomAnchor, constant: -15)
         ])
     
         task = viewModel.asyncImages
