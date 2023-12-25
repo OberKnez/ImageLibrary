@@ -23,3 +23,4 @@ private func fetchImage(descriptor: ImageDescriptor) -> AnyPublisher<UIImage?, E
             .eraseToAnyPublisher()
     }
 ```
+Isolated library works on simulator only. My aggregated script failed for making lib works both on devices and on simulators, so i left it only as simulator valid.
